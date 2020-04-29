@@ -1,0 +1,221 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+body {
+  font-family: "", sans-serif;
+  margin: 0;
+}
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+     
+.my-bg-img {
+  /*main page imag */
+  background-image: url("..//G2C/sgb.png");
+  height:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position the navbar */
+    position: relative;
+}
+.container {
+  /*position: absolute;
+  margin: 20px;*/
+  width: auto;
+    padding: 0 16px;
+}
+.topnav {
+  overflow: hidden;
+   
+}
+
+/*  links in navigation bar */
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* links on hover */
+.topnav a:hover {
+  background-color: #ffff75;
+  color: white;
+}
+
+/* highlight the current page */
+.topnav a.active {
+  background-color: navy blue;
+  color: white;
+}
+.button a{
+    text-decoration: none;
+    color: white;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 20px;
+  color: crimson;
+  background-color:  #cccc00;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+text-decoration: none;
+   
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jumbo-container {
+  position: absolute;
+  margin: 10px;
+  width: auto;
+    padding: 0 16px;
+    top: 68%;
+      left: 50%;
+    transform: translate(-50%, -50%);
+}
+.jumbo-container h3{
+    color: white;
+    text-align: center;
+}
+
+.column {
+  float: left;
+  width: 32%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.main {
+  flex: 70%; /* Set the width of the main content */
+  background-color: white; 
+    padding: 20px; 
+}
+.about-part {
+  padding: 50px;
+  text-align: center;
+  background-color:whitesmoke;
+  color: white;
+}
+.about-part h1{
+    color: darkgrey;
+    text-align:center;  
+}
+.about-part p{
+  color: darkgrey;
+    text-align:justify;
+    align-items: center;
+    
+}
+.proj-lax{
+    background-image: url(p.jpg);
+    min-height: 150px;
+     background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+     background-attachment: fixed;
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.caption span.border {
+    background-color: #111;
+    padding: 18px;
+    letter-spacing: 10px;
+}
+.caption span.border-x {
+    background-color: #111;
+    padding: 18px;
+    letter-spacing: 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #9d9107;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 22px;
+}
+
+.col-container {
+    display: table; /*container element behave like a table */
+    width: 100%; 
+        
+}
+
+.col {
+    display: table-cell; /* inside the container behave like table cells */
+    float: left;
+    width: 33.3%;
+}
+.btn{
+   border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #900520;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 22px;
+}
+.btn a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.vertical-center {
+  position: absolute;
+}
+
+.footer {
+  background-color: #363739;
+  text-align: center;
+    color: whitesmoke;
+  padding: 10px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    
+}
