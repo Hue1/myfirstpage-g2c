@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>MyFirst</title>
+        <meta charset="utf-8">
+	       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Student Portal</title>
+        <script>
+            
+        function Formvalidation(Submit){
+        var fname = document.studform.fname.value;
+            
+        var email = document.studform.email.value;
+        var emailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        
+        var dob = document.studform.dob.value;
+        var dobformat = /(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d/;
+
+        var pnum = document.studform.pnum.value;
+            
+if(fname==""){
+    alert("Please enter you name");
+     return false; 
+    } 
+
+if (email.match(emailformat)) {
+      return true;
+    }
+    else {
+      alert("Please enter a valid email address");
+      return false;
+    } 
+            
+if (dob.match(dobformat)) {
+      return true;
+    }
+    else {
+      alert("Please enter Date of Birth i thus form: dd/mm/yyyy");
+      return false;
+    }           
+         
+if(pnum==""){
+    alert("Please enter your phone number");
+    return false;
+}   
+            
+        }
+        </script>
+        <style>
+            body{
+                background-image: url(srb.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .header {
+                  overflow: hidden;
+                  background-color: #d9d925;
+                    text-align: center;
+                    padding: 30px;
+                      font-size: 20px;
+                color: azure;
+                
+                }
+            
+            .header h1{
+                font-family:sans-serif;
+            }
+    .form{
+                margin: 100px 300px;
+                text-align: center;
+                
+            }  
+            .container{
+                font-family:monospace;
+                font-size: 16px;
+                padding: 10px;
+ 
+                color: #4b4848;
+            }
+/*.registration h2{
+                font-family:monospace;
+                font-size: 25px;
+               
+            }*/
+    #freg{
+                width: 30%;
+                background-color: #fff;
+                opacity: 0.70;
+                border-radius: 15px;
+                padding: 50px 125px;
+                 margin: auto;
+            }
+            #fname{
+                border: none;
+                border-bottom: 1px solid #cede07;
+                width: 305px;
+                padding: 10px;
+            }
+            #pnum{
+                border: none;
+                border-bottom: 1px solid #cede07;
+                 width: 305px;
+                padding: 10px;
+            }
+            #dob{
+                border: none;
+                border-bottom: 1px solid #cede07;
+                 width: 305px;
+                padding: 10px;
+            }
+             #email{
+                border: none;
+                border-bottom: 1px solid #cede07;
+                 width: 305px;
+                padding: 10px;
+            }
+            
+            select {
+                  width: 305px;
+                  padding: 10px;
+                  outline: 0px;
+                    font-family: "Lato",sans-serif;
+                    font-size: 14px;
+                  border-radius: 6px;
+                border: none;
+                  background-color: #eeefeb;
+                }
+            
+            input[type=radio]{
+                padding: 10px;
+                margin: 2px 2px;
+            }
+            
+            input[type=submit]{
+              background-color: #cede07;
+              border: none;
+              border-radius: 15px;
+              color: white;
+              padding: 15px;
+              width: 100%;
+              text-decoration: none;
+              margin: 4px 2px;
+              cursor: pointer;
+                float: right;
+            }
+        </style>
+    </head>
+<body>
+    <div class="header">
+    <h1>STUDENT REGISTRATION PORTAL<hr style="color: white; height: 2px; border-style: double">
+        </h1>
+    </div><br>
+    <div class="registration">
+    <form id="freg" name="studform"  action="/action_page.php" target="_self"  onsubmit="return Formvalidation()" method="post">
+        <div class="container">
+        <h2>PLEASE FILL THE FORM BELOW<hr style="color: #262525; height: 2px">
+            </h2>
+            </div>
+        <br>
+    <label for="fname">Full name:</label><br>
+  <input type="text" id="fname" name="fname" placeholder="your name"><br><br>
+        
+  <label for="pnum">Phone number:</label><br>
+  <input type="tel" id="pnum" name="pnum" size="10" maxlength="10" value="pnum" placeholder=" your phone number"><br><br>
+        
+    <label for="dob">Date of Birth:</label><br>
+  <input type="date" id="dob" name="dob" value="dob"><br><br>
+        
+    <label for="email">Email Address:</label><br>
+  <input type="email" id="email" name="email" pattern="abcde@gmail.com" title="student email" placeholder="xxx@xxx.xxxx"><br><br>
+    
+    <label for="gender">Gender:</label><br><br>
+    <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+        
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+        
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br><br>
+    
+    <label for="level">Please select your Level:</label><br>
+  <select type="text" value="level" name="Level"> 
+    <option>Level 100</option> 
+    <option>Level 200</option> 
+    <option>Level 300</option> 
+    <option>Level 400</option> 
+        </select><br><br> 
+    
+    <input type="submit" onclick="alert('Your form has been successfully submitted')" value="Submit">
+    
+    </form>
+    </div>
+    </body>
+</html>
